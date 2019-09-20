@@ -1,0 +1,20 @@
+<!--page for entering details-->
+<ion-content>
+<div text-center class="pad">
+    <ion-input class="formInput" type="text" placeholder="Your Full Name" [(ngModel)]="name"></ion-input>
+    <ion-input class="formInput" type="text" placeholder="Address" [(ngModel)]="address"></ion-input>
+    <ion-input class="formInput" type="text" placeholder="Practice Name" [(ngModel)]="practicename"></ion-input>
+    <ion-input class="formInput" type="email" placeholder="Email Address" [(ngModel)]="email"></ion-input>
+    <ion-input class="formInput" type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+    <ion-input class="formInput" type="number" placeholder="Phone Number" [(ngModel)]="phonenumber"></ion-input>
+    <ion-input class="formInput" type="number" placeholder="Provider Number" [(ngModel)]="providernumber"></ion-input>
+    <ion-input class="formInput" type="number" placeholder="Speciality" [(ngModel)]="speciality"></ion-input>
+    <button ion-button class = "formInputbut" outline round (click)="gotoemail();"> Sign up </button> <br>
+</div>
+<div text-center class="padlots"> 
+  <p>
+    <span class="grey">Already have an account?</span>
+    <span class="themeblue" ><button no-outline class="nobackground" (click)="gotohome();">Sign In</button></span>
+  </p>
+</div>
+</ion-content>

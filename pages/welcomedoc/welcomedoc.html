@@ -1,0 +1,65 @@
+<ion-header padding>
+
+  <ion-navbar hideBackButton color="primary">
+    <ion-buttons left>
+    <ion-icon name="list"class="menubar_icons"></ion-icon>
+    </ion-buttons>
+    <ion-buttons right>
+    <ion-icon name="search"class="menubar_icons"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="headline" padding-bottom>WELCOME DOC!</div>
+  <ion-grid>
+    <ion-row padding>
+
+      <ion-col *ngIf="GP == true" col-6>
+        <button round ion-button icon-only class="squarebuttons" (click)="newrequest();">
+          <div>
+            <p><ion-icon name="add"style="zoom:4.0;"></ion-icon></p>
+            <p>New Request<br></p>
+          </div>
+        </button>
+      </ion-col>
+      <ion-col  *ngIf="GP != true"col-6>
+        <button round ion-button icon-only class="squarebuttons" (click)="queue()">
+          <div>
+            <p><ion-icon name="add"style="zoom:4.0;"></ion-icon></p>
+            <p>Request Queue<br></p>
+          </div>
+        </button>
+      </ion-col>
+
+      <ion-col col-6>
+        <button round ion-button icon-only class="squarebuttons" (click)="inbox();">
+          <div>
+            <p><ion-icon name="mail"style="zoom:4.0;"></ion-icon></p>
+            <p>Inbox<br></p>
+          </div>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <ion-col col-6>
+        <button round ion-button icon-only class="squarebuttons" (click)="gpprofile();">
+          <div>
+            <p><ion-icon name="person"style="zoom:4.0;"></ion-icon></p>
+            <p>Profile<br></p>
+          </div>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button round ion-button icon-only class="squarebuttons">
+          <div>
+            <p><ion-icon name="settings"style="zoom:4.0;"></ion-icon></p>
+            <p>Settings<br></p>
+          </div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

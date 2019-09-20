@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Requests</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of queueitems; let i = index" (click)="selecteditem(i);">
+      <ion-avatar item-start>
+        <img src="../../assets/avatar.png">
+      </ion-avatar>
+      <h2>{{sendernames[i]}}</h2>
+      <h3>{{item.message}}</h3>
+    </button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <ion-icon name="list" class="menubar_icons"></ion-icon>
+    </ion-buttons>
+    <ion-buttons right>
+      <ion-icon name="search" class="menubar_icons"></ion-icon>
+    </ion-buttons>
+    <ion-title> Add Diagnosis </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-left>
+          <button ion-button class="gradientbuttons" icon-left>
+          <ion-icon name="arrow-back" ></ion-icon>
+            Back
+          </button>
+        </ion-col>
+        <ion-col text-center>
+          <button ion-button class="gradientadd">
+          <ion-icon name="add"style="zoom:3.0;"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button class="gradientbuttons" icon-right>
+          Next
+          <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div text-center>
+      <span class="pinch">PINCH TO ZOOM</span>
+    <img src="assets/Capture.PNG">
+    </div>
+  </div>
+
+  <ion-item>
+    <ion-range round class="gradientslider">
+    </ion-range>
+  </ion-item>
+
+</ion-content>

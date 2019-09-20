@@ -1,0 +1,62 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="primary">
+    <ion-buttons left>
+      <ion-icon name="list" class="menubar_icons"></ion-icon>
+    </ion-buttons>
+    <ion-buttons right>
+      <ion-icon name="search" class="menubar_icons"></ion-icon>
+    </ion-buttons>
+    <ion-title> Add Diagnosis </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-left>
+          <button ion-button class="gradientbuttons" icon-left (click)="goback()">
+          <ion-icon name="arrow-back" ></ion-icon>
+            Back
+          </button>
+        </ion-col>
+        <ion-col text-center>
+          <button ion-button class="gradientadd"(click)="presentPopover($event)">
+          <ion-icon name="add"style="zoom:3.0;"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button class="gradientbuttonsnext" icon-right>
+          Next
+          <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div text-center>
+      <img src="assets/Capture.PNG">
+    </div>
+  </div>
+
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-left>
+          PINCH TO ZOOM
+        </ion-col>
+        <ion-col text-center>
+
+        </ion-col>
+        <ion-col text-right>
+          MOVE UP/DOWN BY TOUCH
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+<ion-item>
+            <ion-range round class="gradientslider">
+            </ion-range>
+          </ion-item>
+</ion-content>

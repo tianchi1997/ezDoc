@@ -1,0 +1,77 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-buttons left>
+    <ion-icon name="list"class="menubar_icons"></ion-icon>
+    </ion-buttons>
+    <ion-title> Payment Info </ion-title>
+    <ion-buttons right>
+    <ion-icon name="search"class="menubar_icons"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <div class="title"> 
+     PAYMENT DETAILS
+   </div> <br>
+    <div text-center padding-top>
+      <span>TOTAL:</span>
+      <span class="smalltitle"> ${{price}}</span>
+      <span class="smallfont"> /yr </span>
+    </div>
+    <div>
+      <ion-card class="rounded">
+      <ion-icon padding name="card"></ion-icon> 
+      Pay with {{Paymenttype}}
+      <button class = "whitebutton no-border" ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon class = "no-border right" name="arrow-down"></ion-icon>
+      </button>
+      </ion-card>
+    </div> <br>
+    <div>
+      <span class="grey">Card number</span>
+        <ion-item no-lines class="white">
+        <ion-input class="formInput"> type="number" [(ngModel)]="cardnumber" </ion-input>
+        </ion-item>
+    </div>
+    <div  padding-top>
+      <span class="grey" > Expiry Date </span>
+        <ion-list padding-left>
+          <ion-item  class="formInput">
+            <ion-label> Month </ion-label>
+            <ion-select> [(ngModel)]="month"
+              <ion-option value="01">01</ion-option>
+              <ion-option value="02">02</ion-option>
+              <ion-option value="03">03</ion-option>
+              <ion-option value="04">04</ion-option>
+              <ion-option value="05">05</ion-option>
+              <ion-option value="06">06</ion-option>
+              <ion-option value="07">07</ion-option>
+              <ion-option value="08">08</ion-option>
+              <ion-option value="09">09</ion-option>
+              <ion-option value="10">10</ion-option>
+              <ion-option value="11">11</ion-option>
+              <ion-option value="12">12</ion-option>
+            </ion-select>
+            <ion-label> Year </ion-label>
+            <ion-select> [(ngModel)]="Year"
+              <ion-option value="2017">2017</ion-option>
+              <ion-option value="2018">2018</ion-option>
+              <ion-option value="2019">2019</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+    </div>  
+    <div>
+      <span class="grey">CVV</span>
+        <ion-item no-lines>
+        <ion-input class="formInput"> type="number" [(ngModel)]="CVV" </ion-input>
+        </ion-item>
+    </div>
+    <div padding-top>
+       <button ion-button class="button-next" outline round (click)="paymentverification();">Next</button>
+    </div>
+</ion-content>

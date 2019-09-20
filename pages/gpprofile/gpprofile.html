@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title >
+      <p danger>Gp Profile</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="profile" padding>
+  <ion-grid>
+    <ion-row padding-top>
+      <ion-col col-2></ion-col>
+      <ion-col col-4>
+        <span class="greytext">First Name</span>
+        <ion-item class="white">
+        <ion-input type="text"> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <span class="greytext"> Last name  </span>
+        <ion-item class="white">
+          <ion-input type="text"> </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+        <span class="greytext">Address</span>
+        <ion-item class="white">
+        <ion-input type="text"> </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+        <span class="greytext">Phone Number</span>
+        <ion-item class="white">
+        <ion-input type="tel"> </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row padding-top>
+      <ion-col col-2></ion-col>
+      <ion-col col-4>
+        <span class="greytext">City</span>
+        <ion-item class="white">
+        <ion-input type="text"> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <span class="greytext"> Country  </span>
+        <ion-item class="white">
+          <ion-input type="text"> </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button class="buttonprofile" outline round (click)="save();">Save</button>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title >
+      <p danger>Refer with <br>confidence.</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="center" Padding>
+    <p>
+    <span class = "ezdoc">ez</span><span class="ezdocwhite">doc</span>
+    </p>
+    <p>
+      <span class ="paragraph">Join our secure network of <br>RACP Specialist Doctors when <Br> you need premium advice<br> regarding your patients.</span>
+    </p>
+  </div>
+
+  <div class="center" Padding>
+    <ion-input class="center formInput" type="text" placeholder="Email Address" [(ngModel)]="email"></ion-input> <br>
+    <ion-input class="center formInput" type="password" placeholder="Password" [(ngModel)]="password"></ion-input> <br>
+    <button ion-button round class="button-white" (click)="authorisation();">Sign in</button> <br> <br> <br> <br>
+    <button ion-button round color="danger" class="button-danger" (click)="signup();">Don't have an account? Sign Up</button> <br>
+  </div>
+
+</ion-content>
+
